@@ -27,6 +27,10 @@ console.log(vehicle.color);
 
 // basic inheritance
 class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+
   // reason to use private is to restrict other devs to it's use
   private drive(): void {
     console.log('vroom');
@@ -42,5 +46,5 @@ class Car extends Vehicle {
 // vehicle.drive();
 // vehicle.honk();
 
-const car = new Car();
+const car = new Car(4, 'orange');
 car.startDrivingProcess();
