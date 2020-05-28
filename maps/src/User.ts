@@ -4,6 +4,7 @@ import { Mappable } from './CustomMap';
 // to help with error location, you can export/import an interface
 // and have the class implement it, if the interface changes the class
 // will error out as well as any time the class with the interface is called
+
 export class User implements Mappable {
   name: string;
   location: {
